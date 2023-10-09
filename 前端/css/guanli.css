@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+}
+ body {
+    display: flex;
+ }
+ .nav {
+    width: 200px;
+    height: 810px;
+    background-color: rgb(51, 51, 51);
+ }
+ .nav .logo {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    font-weight: 400;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+}
+
+.nav .logo a {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    display: block;
+    right: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 100px;
+    text-align: center;
+    font-size: xx-large;
+}
+.nav ul {
+    margin-top: 30px;
+}
+.nav li:first-child {
+    border-top: 0.7px solid rgb(255, 255, 255);
+}
+.nav li {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    display: block;
+    background-color: rgb(51, 51, 51);
+    border-bottom-right-radius: 6%;
+    overflow: hidden;
+    border-bottom: 0.7px solid rgb(255, 255, 255);
+}
+.right01 {
+    width: 1270px;
+    height: 810px;
+}
+.right01 .top {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(129, 142, 147);
+    line-height: 100px;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+.right01 .info {
+    display: flex;
+    margin: 80px auto 0px;
+    border-bottom: 1px solid rgb(129, 142, 147);
+}
+.right01 .info div {
+    line-height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(129, 142, 147);
+}
+.right01 .info input {
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    margin-right: 30px;
+    outline: none;
+    border-style: none none solid;
+    border-image: initial;
+    border-bottom: 0.3px solid rgb(186, 209, 240);
+}
+.right01 .info button {
+    width: 60px;
+    height: 34px;
+    background-color: rgb(92, 91, 91);
+    color: rgb(255, 255, 255);
+    line-height: 34px;
+    outline: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 20%;
+    transition: all 0.3s ease 0s;
+}
+.right01 .info button:hover {
+    background-color: rgb(144, 144, 144);
+    transform: scale(1.1);
+}
+.right01 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+.right01 thead {
+    background-color: rgb(129, 142, 147);
+}
+.right01 tr {
+    transition: all 0.3s ease 0s;
+}
+.right01 th {
+    text-align: center;
+    padding: 10px;
+}
+.right01 td {
+    text-align: center;
+    padding: 10px;
+    border-width: 0.4px;
+    border-style: solid;
+    border-color: rgb(182, 179, 179);
+    border-image: initial;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.right01 tr {
+    transition: all 0.3s ease 0s;
+}
+.right01 tr:hover {
+    background-color: rgb(144, 144, 144);
+    
+}
+.right01 a {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: rgb(51, 51, 51);
+    border-radius: 35%;
+    transition: all 0.3s ease 0s;
+}
+.right01 a:hover {
+    /* background-color: rgb(93, 93, 93); */
+    /* color:rgb(198, 198, 198); */
+    transform: scale(1.1);
+}
