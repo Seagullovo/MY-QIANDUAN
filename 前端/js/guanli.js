@@ -7,7 +7,6 @@ const content = document.querySelector('.content')
 const tbody = document.querySelector('tbody')
 const arr = JSON.parse(localStorage.getItem('data')) || []
 
-
 //添加影评时间
 time.value = new Date().toLocaleString()
 const timer = setInterval(function(){
@@ -18,6 +17,9 @@ const timer = setInterval(function(){
 //添加上传
 info.addEventListener('submit',function(e){
     e.preventDefault()
+    if(!reviewName.value||!userName.value||!content){
+        return alert('输入不能为空')
+    }
     const obj = {
         reviewName:reviewName.value,
         userName:userName.value,
@@ -48,7 +50,7 @@ function render(){
                 </tr>
         `
     })
-    tbody.innerHTML=trArr.join()
+    tbody.innerHTML=trArr.join(' ')
 }
 
 //删除
@@ -60,4 +62,11 @@ tbody.addEventListener('click',function(e){
             render()
         }
     }
+})
+
+//左端导航栏
+const nav1 = document.querySelector('.li1')
+const right01 = document.querySelector('.right01')
+nav1.addEventListener('click',function(){
+    right01.style.transform = 'translate(0,0)' ;
 })
