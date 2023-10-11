@@ -17,8 +17,8 @@ input {
 .contain {
     display: flex;
     justify-content:space-between;
-    width: 750px;
-    height: 600px;
+    width: 900px;
+    height: 700px;
     margin: 100px auto;
     background:transparent;
     /* opacity: 0.9; */
@@ -41,8 +41,8 @@ input {
 }
 .back {
     position: relative;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     background: mediumturquoise;
     /* display: flex; */
     font-size: 25px;
@@ -67,8 +67,8 @@ input {
 }
 .back input {
   display: block;
-  width: 200px;
-  height: 30px;
+  width: 250px;
+  height: 40px;
   margin : 20px auto;
   color:rgb(113, 149, 161);
   background-color: rgb(203, 248, 233);
@@ -85,12 +85,13 @@ input {
 }
 .back button {
   display: block;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   border:none;
-  border-radius: 44%;
+  border-radius: 30%;
   background-color: #fff;
-  margin:0 auto;
+  margin:10px auto;
+  margin-top: 40px;
   text-align: center;
   font-weight: 500;
   transition: all .3s;
@@ -112,8 +113,8 @@ input {
 }
 .user {
     position: relative;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     background: mediumturquoise;
     display: flex;
     align-items: center;
@@ -181,8 +182,8 @@ input {
 .administrators {
     position: relative;
     margin-top: 50px;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     background: rgb(209, 72, 122);
     display: flex;
     align-items: center;
@@ -212,14 +213,14 @@ input {
   
   .administrators::before {
     top: 0;
-    right: 0;
-    border-radius: 0 15px 0 100%;
+    left: 0;
+    border-radius: 0 15px 100% 0;
   }
   
   .administrators::after {
     bottom: 0;
-    left: 0;
-    border-radius: 0 100%  0 15px;
+    right: 0;
+    border-radius: 100% 0 0 15px;
   }
   
   .administrators:hover::before,
@@ -245,8 +246,8 @@ input {
 }
 .back2 {
     position: relative;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     background: rgb(209, 72, 122);
     /* display: flex; */
     font-size: 25px;
@@ -271,8 +272,8 @@ input {
 }
 .back2 input {
   display: block;
-  width: 200px;
-  height: 30px;
+  width: 250px;
+  height: 40px;
   margin : 20px auto;
   color:rgb(113, 149, 161);
   background-color: rgb(203, 248, 233);
@@ -289,12 +290,13 @@ input {
 }
 .back2 button {
   display: block;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   border:none;
-  border-radius: 44%;
+  border-radius: 30%;
   background-color: #fff;
-  margin:0 auto;
+  margin:10px auto;
+  margin-top: 40px;
   text-align: center;
   font-weight: 500;
   transition: all .3s;
