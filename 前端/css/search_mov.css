@@ -3,7 +3,95 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 
 body {
-    bgc
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffdcdc;
+}
+.shell {
+    position: relative;
+    width: 1000px;
+    padding: 33px;
+    background-color: #ff7575;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #ff7575,0 0 0 20px #fff;
+}
+.shell input {
+    width: 80%;
+    height: 100px;
+    color: #fff;
+    font :300 80px '优设标题黒';
+    border: 0;
+    background-color: transparent;
+}
+.shell input::placeholder{
+    color: #8f36367e;
+}
+.shell a {
+    display: flex;
+    position: absolute;
+    right: 60px;
+    top:10px;
+    width: 250px;
+    height: 150px;
+    color: #fff;
+}
+.shell a i {
+    font-size: 120px;
+    transition: all .3s;
+    margin: 0 8px;
+
+}
+.shell .icon-search {
+    opacity: 1;
+}
+.shell .icon-good {
+    opacity: 0;
+}
+.shell a:hover .icon-search{
+    transform: translate(10px,0);
+    opacity: 0;
+}
+.shell a:hover .icon-good{
+    transform: translate(100%,0);
+    opacity: 1;
+}
+.shell a::before {
+    content:'GO!';
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    background-color: #ff7575;
+    padding: 5px 30px;
+    top:50px;
+    right: -25px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all .3s;
+    animation: box 1s infinite ease;
+}
+.shell a:hover::before{
+    top:-115px;
+    opacity: 1;
+}
+@keyframes box {
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(8deg);
+    }
+    66%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
 }
